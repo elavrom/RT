@@ -17,7 +17,7 @@
 * [docker slim](https://dockersl.im/): Permet d'optimiser la taille et la sécu des containers sans perdre de fonctionnalités.
 * [git as database](https://dev.to/pruttned/turning-git-into-an-application-database-4b6a): Article qui explique comment et pourquoi git peut être une excellente base de donnée applicative.
 * [C course by Yale](http://cs.yale.edu/homes/aspnes/classes/223/notes.html#characterIO): Cour de structure de donnée et de programmation de Yale du printemps 2018.
-* [computer science by Harvard](http://cs50.tv/2017/fall/): Cours d'informatique d'arvard (du C aux bases de données en passant par le html).
+* [computer science by Harvard](http://cs50.tv/2017/fall/): Cours d'informatique d'Harvard (du C aux bases de données en passant par le html).
 * [C et C++ by MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-introduction-to-c-and-c-january-iap-2013/index.htm): Introduction au C/C++ par le MIT (2013).
 * [s5cmd](https://github.com/peak/s5cmd): CLI pour les storage s3 beaucoup plus performante que le s3cmd classique.
 * [presentation de s5cmd](https://medium.com/@joshua_robinson/s5cmd-for-high-performance-object-storage-7071352cc09d): Article qui introduit bien s5cmd.

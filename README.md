@@ -34,14 +34,6 @@
 
 ## TODO: A ranger
 
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-introduction-to-c-and-c-january-iap-2013/
-https://leanpub.com/shodan
-https://ghidra-sre.org/
-https://shhgit.darkport.co.uk/
-https://www.arachni-scanner.com/
-https://cryptomator.org/
-https://www.sans.org/
-https://brumm.af/shadows
 https://github.com/tulir/gomuks
 https://www.exploitalert.com/#
 https://medium.com/@joshua_robinson/s5cmd-for-high-performance-object-storage-7071352cc09d

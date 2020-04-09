@@ -9,17 +9,18 @@
 * [arachni](https://www.arachni-scanner.com/): Un scanner de vuln web efficace et facilement scriptable.
 * [cryptomator](https://cryptomator.org/): Un outil de chiffrement côté client qui s'interface avec les clouds (dropbox, drive, ...)
 * [sans](https://www.sans.org/): Un organisme qui fournis des formation, resources et certifications en sécu informatique.
+* [exploitalert](https://www.exploitalert.com/): Un site et une API qui permet d'automatiser l'alerte sur l'apparition d'exploit.
+* [horcrux](https://github.com/jesseduffield/horcrux): Un outil qui permet de split des fichiers chiffré pour se passer de mdp à la façon voldemort.
 
-## Dev / DevOps
+## Dev / DevOps / Ops / Sys
 
 * [docker slim](https://dockersl.im/): Permet d'optimiser la taille et la sécu des containers sans perdre de fonctionnalités.
 * [git as database](https://dev.to/pruttned/turning-git-into-an-application-database-4b6a): Article qui explique comment et pourquoi git peut être une excellente base de donnée applicative.
 * [C course by Yale](http://cs.yale.edu/homes/aspnes/classes/223/notes.html#characterIO): Cour de structure de donnée et de programmation de Yale du printemps 2018.
 * [computer science by Harvard](http://cs50.tv/2017/fall/): Cours d'informatique d'arvard (du C aux bases de données en passant par le html).
 * [C et C++ by MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-introduction-to-c-and-c-january-iap-2013/index.htm): Introduction au C/C++ par le MIT (2013).
-
-## Sys
-
+* [s5cmd](https://github.com/peak/s5cmd): CLI pour les storage s3 beaucoup plus performante que le s3cmd classique.
+* [presentation de s5cmd](https://medium.com/@joshua_robinson/s5cmd-for-high-performance-object-storage-7071352cc09d): Article qui introduit bien s5cmd.
 * [prime on nvidia](https://forum.manjaro.org/t/howto-set-up-prime-with-nvidia-proprietary-driver/40225): Activer PRIME avec les drivers propriétaires NVIDIA.
 
 ## Design
@@ -31,13 +32,10 @@
 
 * [ebookpdf](https://ebookpdf.com/): Une banque d'ebooks en ligne très complète (on cherche encore ce qui manque).
 * [pour comprendre les médias](https://github.com/RValeye/RT/blob/master/mcluhan_m-pour_comprendre_les_medias.pdf): Fiche de lecture du livre « Pour comprendre les médias » de Marshall Mc Luhan.
+* [gomuks](https://github.com/tulir/gomuks): Un client matrix (terminal) en go très stylé mais qui ne supporte pas encore l'E2E encryption.
 
 ## TODO: A ranger
 
-https://github.com/tulir/gomuks
-https://www.exploitalert.com/#
-https://medium.com/@joshua_robinson/s5cmd-for-high-performance-object-storage-7071352cc09d
-https://github.com/peak/s5cmd
 https://github.com/jesseduffield/horcrux
 https://hakin9.org/thefatrat-a-massive-exploiting-tool/
 https://github.com/khanhnnvn/CEHv10

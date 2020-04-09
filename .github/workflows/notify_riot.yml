@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Run a one-line script
+      run: |
+        export ACCESS_TOKEN=jq '.access_token' $(curl -sb -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"identifier":{"type":"m.id.user","user":"$MATRIX_USER"},"initial_device_display_name": "Autobot","password":"$MATRIX_PASSWORD","type":"m.login.password" }' '$MATRIX_URL/_matrix/client/r0/login')
+        export ID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+        curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+           "body": "Le repo a été mis à jour !", \ 
+           "format": "org.matrix.custom.html", \ 
+           "formatted_body": "<b>Le repo a été mis à jour !</b>", \ 
+           "msgtype": "m.text" \ 
+         }' 'https://matrix.org/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN'

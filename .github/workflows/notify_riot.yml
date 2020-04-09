@@ -36,4 +36,4 @@ jobs:
         export ID=$(uuidgen)
         echo $ID
         echo "Notifying Matrix room..."
-        curl -f -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d "{\body\":\"Le repo a été mis à jour !\",\"format\":\"org.matrix.custom.html\",\"formatted_body\":\"<b>Le <a href=\\\"https://github.com/RValeye/RT\\\">repo</a> a été mis à jour !</b>\",\"msgtype\":\"m.text\"}" "$MATRIX_URL/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN"
+        curl -fsb -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d "{\body\":\"Le repo a été mis à jour !\",\"format\":\"org.matrix.custom.html\",\"formatted_body\":\"<b>Le <a href=\\\"https://github.com/RValeye/RT\\\">repo</a> a été mis à jour !</b>\",\"msgtype\":\"m.text\"}" "$MATRIX_URL/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN"

@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Run a one-line script
+    - name: Send notification on matrix
       env:
         MATRIX_URL: ${{ secrets.MATRIX_URL }}
         MATRIX_USER: ${{ secrets.MATRIX_USER }}

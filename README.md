@@ -11,6 +11,9 @@
 * [sans](https://www.sans.org/): Un organisme qui fournis des formation, resources et certifications en sécu informatique.
 * [exploitalert](https://www.exploitalert.com/): Un site et une API qui permet d'automatiser l'alerte sur l'apparition d'exploit.
 * [horcrux](https://github.com/jesseduffield/horcrux): Un outil qui permet de split des fichiers chiffré pour se passer de mdp à la façon voldemort.
+* [thefatrat](https://hakin9.org/thefatrat-a-massive-exploiting-tool/): Un outil d'exloitation qui automatise beaucoup d'étapes.
+* [CEHv10](https://github.com/khanhnnvn/CEHv10): Un ensemble de ressources qui ont été leak pour la CEH (Certified Ethical Hacker).
+* [compilation livres cyber](http://www.ileri.fr/10-livres-cyber): Une list de livres autours du cyberespace.
 
 ## Dev / DevOps / Ops / Sys
 
@@ -22,6 +25,11 @@
 * [s5cmd](https://github.com/peak/s5cmd): CLI pour les storage s3 beaucoup plus performante que le s3cmd classique.
 * [presentation de s5cmd](https://medium.com/@joshua_robinson/s5cmd-for-high-performance-object-storage-7071352cc09d): Article qui introduit bien s5cmd.
 * [prime on nvidia](https://forum.manjaro.org/t/howto-set-up-prime-with-nvidia-proprietary-driver/40225): Activer PRIME avec les drivers propriétaires NVIDIA.
+* [jsonbox](https://github.com/vasanthv/jsonbox#readme): Une API open source qui permet de stocker simplement des batch json (utile pour Hackathon et mocks)
+* [k8slens](https://k8slens.dev/): Un IDE très user friendly pour Kubernetes.
+* [meilisearch](https://www.meilisearch.com/): Un moteur de recherche open source très rapide et très performant.
+* [httpie](https://httpie.org/): Une CLI http moderne, très pratique et performante.
+* [hackthebox theme vscode](https://marketplace.visualstudio.com/items?itemName=silofy.hackthebox&fbclid=IwAR2tDyaGRDCWvPPbs1DINTVX71GfeeFr8escNAmGEQx4gpOcbmfh6MdqV1g): Un theme magnifique pour vscode réalisé par Hackthebox
 
 ## Design
 
@@ -33,16 +41,4 @@
 * [ebookpdf](https://ebookpdf.com/): Une banque d'ebooks en ligne très complète (on cherche encore ce qui manque).
 * [pour comprendre les médias](https://github.com/RValeye/RT/blob/master/mcluhan_m-pour_comprendre_les_medias.pdf): Fiche de lecture du livre « Pour comprendre les médias » de Marshall Mc Luhan.
 * [gomuks](https://github.com/tulir/gomuks): Un client matrix (terminal) en go très stylé mais qui ne supporte pas encore l'E2E encryption.
-
-## TODO: A ranger
-
-https://github.com/jesseduffield/horcrux
-https://hakin9.org/thefatrat-a-massive-exploiting-tool/
-https://github.com/khanhnnvn/CEHv10
-https://github.com/vasanthv/jsonbox#readme
-https://k8slens.dev/
-http://www.ileri.fr/10-livres-cyber
-https://www.meilisearch.com/
-https://korben.info/httpie-un-client-http-en-ligne-de-commande-absolument-genial.html?fbclid=IwAR0Dd-RcZ1yLzPnKvAHMfzefQa0uGdl0n95bi_i6xnKh3KGfVOk5sQ26SLc
-https://marketplace.visualstudio.com/items?itemName=silofy.hackthebox&fbclid=IwAR2tDyaGRDCWvPPbs1DINTVX71GfeeFr8escNAmGEQx4gpOcbmfh6MdqV1g
-https://undraw.co/
+* [undraw](https://undraw.co/): Une très large banque d'illustration svg en flat design.

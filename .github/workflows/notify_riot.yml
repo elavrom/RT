@@ -24,6 +24,7 @@ jobs:
 
     - name: Send notification on matrix
       env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         MATRIX_URL: ${{ secrets.MATRIX_URL }}
         MATRIX_USER: ${{ secrets.MATRIX_USER }}
         MATRIX_PASSWORD: ${{ secrets.MATRIX_PASSWORD }}

@@ -22,11 +22,18 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Run a one-line script
+    - name: Send notification on matrix
+      env:
+        MATRIX_URL: ${{ secrets.MATRIX_URL }}
+        MATRIX_USER: ${{ secrets.MATRIX_USER }}
+        MATRIX_PASSWORD: ${{ secrets.MATRIX_PASSWORD }}
+        MATRIX_ROOM: ${{ secrets.MATRIX_ROOM }} 
       run: |
         echo "Getting access token..."
-        export ACCESS_TOKEN=`jq -r '.access_token' <<< $(curl -sb -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"identifier":{"type":"m.id.user","user":"$MATRIX_USER"},"initial_device_display_name": "Autobot","password":"$MATRIX_PASSWORD","type":"m.login.password" }' '$MATRIX_URL/_matrix/client/r0/login')`
+        export ACCESS_TOKEN=`jq -r '.access_token' <<< $(curl -fsb -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"identifier":{"type":"m.id.user","user":"$MATRIX_USER"},"initial_device_display_name": "Autobot","password":"$MATRIX_PASSWORD","type":"m.login.password" }' 'https://matrix.org/_matrix/client/r0/login')`
+        echo $ACCESS_TOKEN
         echo "Generating an ID..."
-        export ID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+        export ID=$(uuidgen)
+        echo $ID
         echo "Notifying Matrix room..."
-        curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"body":"Le repo a été mis à jour !","format":"org.matrix.custom.html","formatted_body":"<b>Le <a href=\"https://github.com/RValeye/RT\">repo</a> a été mis à jour !</b>","msgtype": "m.text"}' 'https://matrix.org/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN'
+        curl -f -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"body":"Le repo a été mis à jour !","format":"org.matrix.custom.html","formatted_body":"<b>Le <a href=\"https://github.com/RValeye/RT\">repo</a> a été mis à jour !</b>","msgtype": "m.text"}' 'https://matrix.org/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN'

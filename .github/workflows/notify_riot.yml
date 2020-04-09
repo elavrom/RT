@@ -24,11 +24,9 @@ jobs:
 
     - name: Run a one-line script
       run: |
-        export ACCESS_TOKEN=jq '.access_token' $(curl -sb -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"identifier":{"type":"m.id.user","user":"$MATRIX_USER"},"initial_device_display_name": "Autobot","password":"$MATRIX_PASSWORD","type":"m.login.password" }' '$MATRIX_URL/_matrix/client/r0/login')
+        echo "Getting access token..."
+        export ACCESS_TOKEN=`jq -r '.access_token' <<< $(curl -sb -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"identifier":{"type":"m.id.user","user":"$MATRIX_USER"},"initial_device_display_name": "Autobot","password":"$MATRIX_PASSWORD","type":"m.login.password" }' '$MATRIX_URL/_matrix/client/r0/login')`
+        echo "Generating an ID..."
         export ID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
-        curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
-           "body": "Le repo a été mis à jour !", \ 
-           "format": "org.matrix.custom.html", \ 
-           "formatted_body": "<b>Le repo a été mis à jour !</b>", \ 
-           "msgtype": "m.text" \ 
-         }' 'https://matrix.org/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN'
+        echo "Notifying Matrix room..."
+        curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{"body":"Le repo a été mis à jour !","format":"org.matrix.custom.html","formatted_body":"<b>Le <a href=\"https://github.com/RValeye/RT\">repo</a> a été mis à jour !</b>","msgtype": "m.text"}' 'https://matrix.org/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN'

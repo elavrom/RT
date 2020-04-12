@@ -33,4 +33,5 @@ jobs:
         echo "Generating an ID..."
         export ID=$(uuidgen)
         echo "Notifying Matrix room..."
-        curl -fsS -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d "{\"body\":\"Le repo a été mis à jour !\",\"format\":\"org.matrix.custom.html\",\"formatted_body\":\"<b>Le <a href=\\\"https://github.com/RValeye/RT\\\">repo</a> a été mis à jour !</b>\",\"msgtype\":\"m.text\"}" "$MATRIX_URL/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN"
+        export GIT_LOG=$(git --no-pager log --format="%an a ajouté un outil: \\\"%s\\\"" -n1)
+        curl -fsS -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d "{\"body\":\"Le repo a été mis à jour !\",\"format\":\"org.matrix.custom.html\",\"formatted_body\":\"<b>Le <a href=\\\"https://github.com/RValeye/RT\\\">repo</a> a été mis à jour !<br/>$GIT_LOG</b>\",\"msgtype\":\"m.text\"}" "$MATRIX_URL/_matrix/client/r0/rooms/$MATRIX_ROOM/send/m.room.message/$ID?access_token=$ACCESS_TOKEN"

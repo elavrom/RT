@@ -37,6 +37,7 @@
 
 * [material builder](https://material-theme-builder.glitch.me/): Permet de configurer un thème material au petits oignons en choisissant soit même ses variables sass.
 * [brumm](https://brumm.af/shadows): Un outil en ligne pour réaliser tes plus belles shadow box en css.
+* [dotgrid](https://hundredrabbits.itch.io/dotgrid): Un outil en client lourd qui permet de créer simplement des logos svg
 
 ## Autres
 

@@ -32,6 +32,7 @@
 * [httpie](https://httpie.org/): Une CLI http moderne, très pratique et performante.
 * [hackthebox theme vscode](https://marketplace.visualstudio.com/items?itemName=silofy.hackthebox&fbclid=IwAR2tDyaGRDCWvPPbs1DINTVX71GfeeFr8escNAmGEQx4gpOcbmfh6MdqV1g): Un theme magnifique pour vscode réalisé par Hackthebox
 * [vulcain](https://github.com/dunglas/vulcain): Un nouveau protocole qui s'appuie sur HTTP et REST et offre une alternative à Graphql.
+* [pulumi](https://www.pulumi.com/): IAC qui utilise de vrai language de programmation
 
 ## Design
 

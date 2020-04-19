@@ -47,3 +47,4 @@
 * [gomuks](https://github.com/tulir/gomuks): Un client matrix (terminal) en go très stylé mais qui ne supporte pas encore l'E2E encryption.
 * [undraw](https://undraw.co/): Une très large banque d'illustration svg en flat design.
 * [wkhtmltopdf](https://wkhtmltopdf.org/): Un outil tout simple qui converti des pages html en pdf.
+* [invidious](https://invidio.us/): Frontend Youtube sans tracking Google. [Lien Korben](https://korben.info/invidious-un-frontend-youtube-qui-vous-preserve-du-tracking-google.html)

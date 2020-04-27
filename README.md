@@ -15,6 +15,7 @@
 * [CEHv10](https://github.com/khanhnnvn/CEHv10): Un ensemble de ressources qui ont été leak pour la CEH (Certified Ethical Hacker).
 * [compilation livres cyber](http://www.ileri.fr/10-livres-cyber): Une list de livres autours du cyberespace.
 * [HaveIBeenPwned](https://haveibeenpwned.com/): Un moteur de recherche qui parcours les leak de donnée pour vérifier si ses identifiants ont été compromis
+* [thief](https://github.com/Devatoria/thief): Outil qui permet de "voler" des ressources allouées à des containers en modifiant les cgroups.
 
 ## Dev / DevOps / Ops / Sys
 

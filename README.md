@@ -34,12 +34,18 @@
 * [hackthebox theme vscode](https://marketplace.visualstudio.com/items?itemName=silofy.hackthebox&fbclid=IwAR2tDyaGRDCWvPPbs1DINTVX71GfeeFr8escNAmGEQx4gpOcbmfh6MdqV1g): Un theme magnifique pour vscode réalisé par Hackthebox
 * [vulcain](https://github.com/dunglas/vulcain): Un nouveau protocole qui s'appuie sur HTTP et REST et offre une alternative à Graphql.
 * [pulumi](https://www.pulumi.com/): IAC qui utilise de vrai language de programmation
+* [blurhash](https://github.com/woltapp/blurhash): Algo qui permet de générer un hash très léger et avoir un image blur pendant le chargement d'une image plus lourde
 
 ## Design
 
 * [material builder](https://material-theme-builder.glitch.me/): Permet de configurer un thème material au petits oignons en choisissant soit même ses variables sass.
+* [material palette](https://www.materialpalette.com): Site mettant à dispo des palettes de couleurs material, les icons et la liste des shades de chaque couleur.
 * [brumm](https://brumm.af/shadows): Un outil en ligne pour réaliser tes plus belles shadow box en css.
 * [dotgrid](https://hundredrabbits.itch.io/dotgrid): Un outil en client lourd qui permet de créer simplement des logos svg
+* [appicon](https://appicon.co/): Un outil pour générer les icônes d'applications mobiles (Android / iOS / Ipad / Watch / Mac)
+* [icones8](https://icones8.fr/): Flaticon Like
+* [vecteezy](https://www.vecteezy.com/): Collection d'images vectorielles gratuites
+* [canva](https://www.canva.com/): Editeur vectoriel gratuit avec pas mal de ressources déjà présentes
 
 ## Autres
 
@@ -48,3 +54,4 @@
 * [gomuks](https://github.com/tulir/gomuks): Un client matrix (terminal) en go très stylé mais qui ne supporte pas encore l'E2E encryption.
 * [undraw](https://undraw.co/): Une très large banque d'illustration svg en flat design.
 * [wkhtmltopdf](https://wkhtmltopdf.org/): Un outil tout simple qui converti des pages html en pdf.
+* [invidious](https://invidio.us/): Frontend Youtube sans tracking Google. [Lien Korben](https://korben.info/invidious-un-frontend-youtube-qui-vous-preserve-du-tracking-google.html)

@@ -35,6 +35,7 @@
 * [vulcain](https://github.com/dunglas/vulcain): Un nouveau protocole qui s'appuie sur HTTP et REST et offre une alternative à Graphql.
 * [pulumi](https://www.pulumi.com/): IAC qui utilise de vrai language de programmation
 * [blurhash](https://github.com/woltapp/blurhash): Algo qui permet de générer un hash très léger et avoir un image blur pendant le chargement d'une image plus lourde
+* [Flutter](https://flutter.dev/): Framework de chez Google (langage Dart) qui permet de dev des applis cross platformes ultra propres et très facilement
 
 ## Design
 
@@ -55,3 +56,4 @@
 * [undraw](https://undraw.co/): Une très large banque d'illustration svg en flat design.
 * [wkhtmltopdf](https://wkhtmltopdf.org/): Un outil tout simple qui converti des pages html en pdf.
 * [invidious](https://invidio.us/): Frontend Youtube sans tracking Google. [Lien Korben](https://korben.info/invidious-un-frontend-youtube-qui-vous-preserve-du-tracking-google.html)
+* [z-lib](https://z-lib.org/): Des millions d'ebooks et d'articles scientifiques gratuits (tipiak !)

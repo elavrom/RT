@@ -36,6 +36,7 @@
 * [pulumi](https://www.pulumi.com/): IAC qui utilise de vrai language de programmation
 * [blurhash](https://github.com/woltapp/blurhash): Algo qui permet de générer un hash très léger et avoir un image blur pendant le chargement d'une image plus lourde
 * [Flutter](https://flutter.dev/): Framework de chez Google (langage Dart) qui permet de dev des applis cross platformes ultra propres et très facilement
+* [Rich](https://github.com/willmcgugan/rich): Lib python permettant de render du rich text dans un terminal (couleurs, emojis, tableaux, etc) crossplateforme.
 
 ## Design
 

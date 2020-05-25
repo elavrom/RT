@@ -46,6 +46,7 @@
 * [icones8](https://icones8.fr/): Flaticon Like
 * [vecteezy](https://www.vecteezy.com/): Collection d'images vectorielles gratuites
 * [canva](https://www.canva.com/): Editeur vectoriel gratuit avec pas mal de ressources déjà présentes
+* [csslayout](https://csslayout.io/patterns/): Paternes css très communs pour des designs en full CSS
 
 ## Autres
 

@@ -37,6 +37,7 @@
 * [blurhash](https://github.com/woltapp/blurhash): Algo qui permet de générer un hash très léger et avoir un image blur pendant le chargement d'une image plus lourde
 * [Flutter](https://flutter.dev/): Framework de chez Google (langage Dart) qui permet de dev des applis cross platformes ultra propres et très facilement
 * [Rich](https://github.com/willmcgugan/rich): Lib python permettant de render du rich text dans un terminal (couleurs, emojis, tableaux, etc) crossplateforme.
+* [k3s](https://k3s.io/): Version légère de kubernetes pour IOT ou tests sur petite infra.
 
 ## Design
 

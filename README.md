@@ -60,3 +60,4 @@
 * [wkhtmltopdf](https://wkhtmltopdf.org/): Un outil tout simple qui converti des pages html en pdf.
 * [invidious](https://invidio.us/): Frontend Youtube sans tracking Google. [Lien Korben](https://korben.info/invidious-un-frontend-youtube-qui-vous-preserve-du-tracking-google.html)
 * [z-lib](https://z-lib.org/): Des millions d'ebooks et d'articles scientifiques gratuits (tipiak !)
+* [n8n.io](https://n8n.io): Outil d'automatisation / intégration / webhooks

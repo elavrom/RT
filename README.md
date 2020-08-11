@@ -1,5 +1,9 @@
 # RT
 
+## Autres répertoires
+
+* [Awesome Sysadmin](https://github.com/kahun/awesome-sysadmin): Une liste énorme d'outils OpenSource
+
 ## Cybersec
 
 * [guide complet sur Shodan](https://leanpub.com/shodan): Cour payant mais qui à l'air intéressant sur l'utilisation de shodan.
